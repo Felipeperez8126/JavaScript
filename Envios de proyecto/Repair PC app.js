@@ -1,0 +1,28 @@
+const Cliente = require("./Cliente");
+const Compra = require("./Compra");
+const Descuento = require("./Descuento");
+const Categoria = require("./Categoria");
+const Producto = require("./Producto");
+const Proveedor = require("./Proveedor");
+const Especificaciones = require("./Especificaciones");
+const Envio = require("./Envio");
+const Pago = require("./Pago");
+
+const newcate = new Categoria('A1','computador');
+const newclient1 = new Cliente(123456789, 'Pedro', 'Picapiedra',312986273,'pedro@gmail.com', 'Era prehistorica');
+const newprod1 = new Producto('A1','B1',4500000, 'Computador Portátil Gamer LENOVO IdeaPad Gaming 3 ', '- Intel Core i7 - RAM 8GB - Disco SSHD 1TB 256GB - Negro -15,6" Pulgadas', '','','','');
+const newcom1 = new Compra();
+const descuen1 = new Descuento();
+const provee1 = new Proveedor();
+const especifi1 = new Especificaciones();
+const newenvio1 = new Envio();
+const newpago1 = new Pago();
+console.log(newclient1);
+console.log(newcate._codigocategoria);
+console.log(newprod1);
+console.log(newcom1);
+console.log(descuen1);
+console.log(provee1);
+console.log(especifi1);
+console.log(newenvio1);
+console.log(newpago1);
